@@ -1,2 +1,3 @@
-# PasswordCracker
-A password cracking simulator, enter a password into the CLI and the program will ask for your choice of cracking algorithms/methods. The program then uses that method to crack/guess the password and will also display the time it took to do so.
+version https://git-lfs.github.com/spec/v1
+oid sha256:28847d6cf85aefb45a068c617ea21ba3b82dd307ab2805d9dc03f9d9197eb3f7
+size 263
