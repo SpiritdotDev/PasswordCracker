@@ -1,5 +1,6 @@
 from BruteForce import BruteForce
 from Dictionary import Dictionary
+from RainbowTable import generate_lookup_table
 
 #Main file for the program, should take in user input for the password and cracking method
 #and from there send the work to the correct algorithm function.
@@ -22,7 +23,8 @@ def main():
         case 2:
             Dictionary(Password)
         case 3:
-            return
+            generate_lookup_table("rockyou.txt")
+            # Will need to call actual rainbow table lookup here
         case _:
             raise Exception("Not a valid method selection.")
     
