@@ -7,8 +7,8 @@ def BruteForce(password):
     Alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+{}:"|<>?-=[]\;,./'
     startTime = time.time()
     CharLength = 1
-    counter = 1
     found = False
+    counter = 1
 
     while CharLength <= MAXLENGTH and found == False:
         attempts = itertools.product(Alphabet,repeat=CharLength)
