@@ -1,4 +1,5 @@
 from BruteForce import BruteForce
+from Dictionary import Dictionary
 
 #Main file for the program, should take in user input for the password and cracking method
 #and from there send the work to the correct algorithm function.
@@ -9,7 +10,6 @@ methods = ["Brute Force", "Dictionary", "Rainbow Table"]
 def main():
 
     Password = input("Welcome to the password cracker, please enter the password you want to simulate cracking. ")
-    print(Password)
     counter = 1
     for method in methods:
         print(f"{counter}: {method}")
@@ -20,7 +20,7 @@ def main():
         case 1:
             BruteForce(Password)
         case 2:
-            return
+            Dictionary(Password)
         case 3:
             return
         case _:
